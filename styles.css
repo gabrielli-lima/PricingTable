@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f9fbfc;
+    font-family: 'Open Sans';
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    color: #FFFFFF;
+}
+
+body>header {
+    background: #1d539e;
+    flex-basis: 50vh;
+}
+
+h1 {
+    margin-top: 10vh;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+}
+
+h1+p {
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    max-width: 550px;
+    margin-bottom: 65px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+.planos {
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.plansContainer {
+    width: 355px;
+    height: 470px;
+    left: 167px;
+    top: 310px;
+    color: #1E2338;
+    background: #FFFFFF;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+    flex-direction: column;
+    align-items: left;
+    display: flex;
+
+
+    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    height: 49px;
+    border: 1px solid #1D539E;
+    border-radius: 10px;
+    background: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 12px 24px;
+    color: #1D539E;
+    margin-top: 120px;
+}
+.planos :nth-child(3) button{
+    margin-top: 42px;
+}
+
+/* PLANO BÁSICO */
+.plansContainer header {
+    background: #FFCC29;
+    height: 76px;
+    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    border-radius: 8px 8px 0px 0px;
+    flex-direction: row;
+    align-items: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plansContainer :nth-child(2) button {
+    background: #1D539E;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-top: 69px;
+}
+
+.plansContainer:nth-child(2){
+    width: 356px;
+    height: 491px;
+}
+
+.plansContainer:not(:nth-child(2)) {
+    padding: 30px;
+}
+
+.plansContainer:nth-child(2) header+div {
+    flex-direction: column;
+    align-items: left;
+    display: flex;
+    padding: 10px 30px 0px 30px;
+    height: 100%;
+}
+
+header h3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #1D539E;
+    padding: 25px 30px;
+}
+
+header div {
+
+    margin: 22px 20px;
+    width: 94px;
+    height: 32px;
+    background: #1D539E;
+    border-radius: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 10px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+/* R$ 0 */
+.preco span:first-child {
+    font-size: 36px;
+    line-height: 49px;
+    color: #1E2338;
+
+}
+
+/* ,00 */
+.preco {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* /mês */
+.preco span:nth-child(3) {
+    font-weight: 400;
+    color: #828799;
+}
+
+.preco:nth-child(2n) {
+    margin-top: 20px;
+}
+
+.preco+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 10px 0px 20px;
+    color: #828799;
+}
+
+hr {
+    background: #EEEEEE;
+}
+
+hr~p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828799;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+img {
+    margin-right: 15px;
+}
