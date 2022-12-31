@@ -3,7 +3,7 @@ Neste desafio foi desenvolvido uma página com uma tabela com as opções de pre
 
 [🔗 Clique aqui para acessar](https://gabrielli-lima.github.io/PricingTable/)
 
-![preview](./.github/preview.png)
+![preview](./.github/)
 
 ## 🛠️ Tecnologias
 - HTML
